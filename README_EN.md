@@ -58,15 +58,8 @@ The Skill covers:
 
 Implementation, deployment, resume writing, and interview preparation belong to downstream workflows and are not completed by this Skill.
 
-## Real example
-
-[`China AI application / Agent internship: a two-month RAG project search`](examples/ai-agent-rag-internship.md) records one complete run. Starting from the user's background and the role knowledge map, it recalled roughly 50 results, statically inspected 8 repositories, compared 4 candidates, and deeply inspected the 2 selected by the user before producing a primary project, a backup, and an eight-week extension plan.
-
-The example distinguishes **Verified / Claimed / Inferred / Unknown** evidence. It is a static-inspection snapshot dated 2026-08-16; no third-party code was executed, and README claims were not treated as verified facts.
-
 ## Validation status
 
-- 1 end-to-end real scenario completed;
 - 12 behavior cases specified;
 - the full automated suite has not been run, so no overall pass rate is claimed.
 
@@ -82,10 +75,10 @@ The core `SKILL.md` uses only the standard `name`, `description`, and Markdown i
 
 ## Install
 
-Clone the repository:
+On the repository page, select **Code**, copy the HTTPS URL, and run:
 
 ```bash
-git clone https://github.com/yu-yaofeng/HunterProject.git
+git clone <repository-url>
 ```
 
 Then copy or link the complete `skills/hunt-github-projects` folder into a Skills directory supported by your agent.
