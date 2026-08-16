@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Project Hunter"
+  short_description: "Find job-relevant GitHub project candidates"
+  default_prompt: "Use $hunt-github-projects to learn about my background and target role, then find several verified GitHub projects worth building on for job applications."
