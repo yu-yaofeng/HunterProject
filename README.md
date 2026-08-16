@@ -2,14 +2,14 @@
 
 # HunterProject
 
-**从“我没有项目”，到找到值得二次开发的 GitHub 项目。**
+**根据个人背景与 JD，从 GitHub 找到经过代码验证、值得继续改造的求职项目。**
 
 [中文](#中文) | [English](#english)
 
 ![version](https://img.shields.io/badge/version-v0.1.0-44cc11?style=flat-square)
 ![license](https://img.shields.io/badge/license-MIT-2094f3?style=flat-square)
 ![audience](https://img.shields.io/badge/audience-Software%20Job%20Seekers-f28c45?style=flat-square)
-![workflow](https://img.shields.io/badge/workflow-Profile%2FJD%20to%20Verified%20Projects-a500a5?style=flat-square)
+![workflow](https://img.shields.io/badge/workflow-Discover--Verify--Choose-a500a5?style=flat-square)
 
 </div>
 
@@ -59,6 +59,18 @@ Skill 会停在以下范围：
 - 推荐主项目、备用项目和个人改造方向。
 
 项目实现、部署、简历写作和面试准备属于下游工作流，不在本 Skill 内完成。
+
+### 真实案例
+
+[`中国 AI 应用 / Agent 实习：两个月 RAG 项目搜索`](examples/ai-agent-rag-internship.md) 记录了一次完整运行：从个人背景和岗位知识点出发，召回约 50 个结果、静态检查 8 个仓库、比较 4 个候选，再对用户选择的 2 个项目做代码级深检，最终给出主项目、备用项目和八周改造路线。
+
+案例明确区分 **Verified / Claimed / Inferred / Unknown**。它是一份 2026-08-16 的静态检查快照，没有运行第三方代码，也不把 README 声明当作已经验证的事实。
+
+### 验证状态
+
+- 1 个端到端真实案例已完成；
+- 12 个行为案例已定义；
+- 完整自动化评测尚未运行，因此当前不声明整体通过率。
 
 ### Skill 位置
 
@@ -162,6 +174,18 @@ HunterProject evaluates repository quality, role fit, user fit, and career value
 This repository contains an early, instruction-first Agent Skill for workflow testing. It does not yet include a deterministic GitHub API search script or a complete role-pack library.
 
 The Skill focuses on discovery and selection. It deliberately stops before implementation, deployment, resume writing, and interview preparation.
+
+### Real example
+
+[`China AI application / Agent internship: a two-month RAG project search`](examples/ai-agent-rag-internship.md) documents one end-to-end run: roughly 50 search results recalled, 8 repositories statically inspected, 4 candidates compared, and 2 user-selected projects deeply inspected before choosing a primary project, a backup, and an eight-week extension plan.
+
+The case separates **Verified / Claimed / Inferred / Unknown** evidence. It is a static-inspection snapshot dated 2026-08-16; no third-party code was executed.
+
+### Validation status
+
+- 1 end-to-end real scenario completed;
+- 12 behavior cases specified;
+- the full automated suite has not been run, so no overall pass rate is claimed.
 
 ### Install
 
