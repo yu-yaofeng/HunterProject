@@ -60,15 +60,8 @@ Skill 会停在以下范围：
 
 项目实现、部署、简历写作和面试准备属于下游工作流，不在本 Skill 内完成。
 
-### 真实案例
-
-[`中国 AI 应用 / Agent 实习：两个月 RAG 项目搜索`](examples/ai-agent-rag-internship.md) 记录了一次完整运行：从个人背景和岗位知识点出发，召回约 50 个结果、静态检查 8 个仓库、比较 4 个候选，再对用户选择的 2 个项目做代码级深检，最终给出主项目、备用项目和八周改造路线。
-
-案例明确区分 **Verified / Claimed / Inferred / Unknown**。它是一份 2026-08-16 的静态检查快照，没有运行第三方代码，也不把 README 声明当作已经验证的事实。
-
 ### 验证状态
 
-- 1 个端到端真实案例已完成；
 - 12 个行为案例已定义；
 - 完整自动化评测尚未运行，因此当前不声明整体通过率。
 
@@ -84,10 +77,10 @@ skills/hunt-github-projects/
 
 ### 安装
 
-先克隆仓库：
+在仓库页面点击 **Code** 并复制 HTTPS 地址，然后运行：
 
 ```bash
-git clone https://github.com/yu-yaofeng/HunterProject.git
+git clone <repository-url>
 ```
 
 然后将完整的 `skills/hunt-github-projects` 文件夹复制或链接到 Agent 支持的 Skills 目录。
