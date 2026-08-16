@@ -4,7 +4,7 @@
 
 **根据个人背景与 JD，从 GitHub 找到经过代码验证、值得继续改造的求职项目。**
 
-[中文](#中文) | [English](#english)
+**中文** | [English](README_EN.md)
 
 ![version](https://img.shields.io/badge/version-v0.1.0-44cc11?style=flat-square)
 ![license](https://img.shields.io/badge/license-MIT-2094f3?style=flat-square)
@@ -141,93 +141,10 @@ $hunt-github-projects 这是我的 JD 和个人背景。
 - 先让用户选择候选，再给最终主项目和备用项目；
 - 明确项目发现与下游实现之间的边界。
 
----
+## 许可证
 
-## English
+HunterProject 基于 [MIT License](LICENSE) 开源。
 
-> Learn who the user wants to become as a programmer, then find open-source projects that fit their job search and leave meaningful room for extension.
+## 独立性声明
 
-HunterProject helps programmers discover, verify, and compare open-source repositories worth building on for internships, new-grad roles, job changes, and portfolio-based hiring.
-
-It changes the interaction from “keyword in, repository out” to:
-
-```text
-person
-→ target role or JD
-→ role knowledge map
-→ search profile
-→ live GitHub discovery
-→ code-evidence verification
-→ 3–5 qualified candidates
-→ user selects 1–2 for deep inspection
-→ primary and backup recommendation
-```
-
-### Why it exists
-
-Many developers know that GitHub contains valuable projects but do not know what to search for, how to distinguish a real engineering project from a tutorial, or which repository fits their skills, timeframe, and target role.
-
-HunterProject evaluates repository quality, role fit, user fit, and career value separately. Important claims should be supported by repository metadata, manifests, configuration, entry points, tests, CI, or feature code rather than README text alone.
-
-### Current status
-
-This repository contains an early, instruction-first Agent Skill for workflow testing. It does not yet include a deterministic GitHub API search script or a complete role-pack library.
-
-The Skill focuses on discovery and selection. It deliberately stops before implementation, deployment, resume writing, and interview preparation.
-
-### Real example
-
-[`China AI application / Agent internship: a two-month RAG project search`](examples/ai-agent-rag-internship.md) documents one end-to-end run: roughly 50 search results recalled, 8 repositories statically inspected, 4 candidates compared, and 2 user-selected projects deeply inspected before choosing a primary project, a backup, and an eight-week extension plan.
-
-The case separates **Verified / Claimed / Inferred / Unknown** evidence. It is a static-inspection snapshot dated 2026-08-16; no third-party code was executed.
-
-### Validation status
-
-- 1 end-to-end real scenario completed;
-- 12 behavior cases specified;
-- the full automated suite has not been run, so no overall pass rate is claimed.
-
-### Install
-
-Clone the repository:
-
-```bash
-git clone https://github.com/yu-yaofeng/HunterProject.git
-```
-
-Copy or link the complete `skills/hunt-github-projects` directory into the Skills directory supported by your agent. For Codex, examples include:
-
-```text
-$HOME/.agents/skills/hunt-github-projects/
-<project>/.agents/skills/hunt-github-projects/
-```
-
-Other agents may use different discovery directories. Keep the complete Skill folder together and consult that agent's current documentation.
-
-### Try it
-
-```text
-$hunt-github-projects I have no projects yet. Help me find a GitHub project for my job search.
-```
-
-```text
-$hunt-github-projects I know Java, Spring Boot, and MySQL, want a backend internship,
-and have six weeks. Find several non-mall projects worth extending.
-```
-
-```text
-$hunt-github-projects Here is my JD and background. Skip questions I already answered
-and find 3–5 candidates supported by current repository evidence.
-```
-
-### Evaluation
-
-Behavior cases are available in [`evaluations/cases.md`](evaluations/cases.md). They cover guided intake, fast-lane routing, honest no-web fallback, no-padding behavior, user-specific fit, stale-ranking invalidation, candidate feedback, and workflow boundaries.
-
-## License
-
-HunterProject is released under the [MIT License](LICENSE).
-
-## Independence
-
-HunterProject is an independent community project. It is not affiliated with or endorsed by GitHub, OpenAI, or the maintainers of repositories it may discover and evaluate. Product names and trademarks belong to their respective owners.
+HunterProject 是独立的社区项目，与 GitHub、OpenAI 以及它可能发现和评估的仓库维护者不存在隶属或背书关系。产品名称和商标归各自权利人所有。
